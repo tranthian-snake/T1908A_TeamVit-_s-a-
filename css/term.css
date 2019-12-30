@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_span{
+    background: #d9bfbf;
+    color: white;
+}
+header .header_main{
+    height: auto;
+    float: left;
+    margin: 100px 0 100px 0;
+}
+header .header_main a{
+    color: black;
+}
+/*chỗ này là meta của phần header main*/
+@media screen and (max-width: 960px) {
+    .header_main{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header_main{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header_main{
+        max-width: 100%;
+    }
+}
+/*phần này là reposive của phần footer*/
+
+@media screen and (max-width: 960px) {
+    .footer_header{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer_header{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer_header{
+        max-width: 100%;
+
+    }
+}
+
+header .box_home{
+    float: left;
+    margin-right: 20px;
+}
+header .box_home a{
+    font-size: 18px;
+    color: #5c5c5c;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+/*chỗ này là của thanh tìm kiếm*/
+header .search{
+    display:inline-block;
+    color:white;
+}
+header .search-bar{
+    float: right;
+    display:block;
+    margin-top:100px ;
+    margin-right: 10px;
+    height: 50px;
+}
+header input[type=text] {
+    width: 10vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    transition: width 0.4s ease-in-out;
+}
+header nav li:hover{
+    background-color:white;
+}
+header .search:hover{
+    background-color:white;
+    color:black;
+}
+header .search:hover .search-bar{
+    display:block;
+}
+header form input[type="text"]:focus{
+    width:20vw;
+    background-color:white;
+}
+
+header .acc{
+    float: right;
+    height: auto;
+}
+header .acc i  {
+    float: right;
+    color: #5c5c5c;
+    font-size: 20px;
+    margin: 100px 10px 100px 0;
+}
+/*đây là code của phần footer*/
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+}
+/* phần này là  liên kết facebook*/
+
+footer .box_footer i{
+    font-size: 30px;
+    float: left;
+    margin-right: 30px;
+    color: white;
+    margin-top: 30px;
+}
+footer .box_footer i:hover {
+    color:  hotpink;
+}
+footer .box_main a{
+    color: white;
+    float: left;
+    margin-right: 10px;
+    font-size: 18px;
+}
+footer .box_dk{
+    margin: 80px 0 70px 0;
+    text-align: center;
+}
+/*thanh email*/
+footer #box_email{
+    background: black;
+    border-bottom: 2px solid white;
+}
+footer #box_email input{
+    background: black;
+    width: 23vw;
+    outline: 0;
+    border: 0;
+}
+footer #box_email button{
+    color: white;
+    background: hotpink;
+    text-align: center;
+    outline: 0;
+    margin-bottom: 10px;
+}
+footer #box_email button:hover{
+    background: white;
+    color: hotpink;
+}
+footer #note_feedback{
+    margin-top: 20px;
+}
+/*phần này lầ chỗ liên kết */
+footer .Footer__PaymentList{
+    margin-top: 80px;
+}
+footer .HorizontalList__Item{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+footer .box_dk a{
+    list-style: none;
+    text-decoration: none;
+    outline: 0;
+    color: hotpink;
+}
+
+/*reposive menu */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+
+    color: gray;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px ) {
+    .header_span h4{
+        font-size: 3vw;
+    }
+    header{
+        min-height: 100px;
+    }
+    .header_main{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .acc{
+        margin-top: -70px;
+        font-size:5vw ;
+    }
+    .footer_header h3{
+        font-size: 4vw;
+    }
+    .footer_header i{
+        font-size: 4vw;
+    }
+    .footer_main a{
+        font-size: 3vw;
+    }
+    #box_email {
+        font-size: 2vw;
+    }
+    #box_email input{
+        font-size: 2vw;
+        max-width: 16vw;
+    }
+    #box_email button{
+        font-size: 2vw;
+        width: 10vw;
+        height: 5vw;
+    }
+    .acc i{
+        font-size: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Body*/
+.content{
+    margin: 0 auto;
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.term{
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.term-title{
+    margin: auto;
+    padding: auto;
+}
+
+.border{
+    width: 160px;
+    height: 2px;
+    background: lightpink;
+    margin: 20px auto;
+}
+
+.desc{
+    margin: 0 auto;
+    padding: 0 20px;
+    display: none;
+}
+
+.term-title h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.ship h2, .refund h2, .war h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 30px;
+    padding: 10px 10px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.refund ul, .war ul{
+    margin: 0 40px;
+    padding: auto 20px;
+}
+
+.ship p, .refund p, .war p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 10px 20px;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+ul > li{
+    margin: 20px 20px;
+    padding: 10px auto;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+ol > li{
+    margin: 20px 20px;
+    padding: 10px auto;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+}
+

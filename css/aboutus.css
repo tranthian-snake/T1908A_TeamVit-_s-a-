@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*.contact .location{*/
+/*    border: solid 1px black;*/
+/*}*/
+
+/*.contact .form{*/
+/*    border: solid 1px black;*/
+/*}*/
+
+header{
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_span{
+    background: #d9bfbf;
+    color: white;
+}
+header .header_main{
+    height: auto;
+    float: left;
+    margin: 100px 0 100px 0;
+}
+header .header_main a{
+    color: black;
+}
+/*chỗ này là meta của phần header main*/
+@media screen and (max-width: 960px) {
+    .header_main{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header_main{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header_main{
+        max-width: 100%;
+    }
+}
+/*phần này là reposive của phần footer*/
+
+@media screen and (max-width: 960px) {
+    .footer_header{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer_header{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer_header{
+        max-width: 100%;
+
+    }
+}
+
+header .box_home{
+    float: left;
+    margin-right: 20px;
+}
+header .box_home a{
+    font-size: 18px;
+    color: #5c5c5c;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+/*chỗ này là của thanh tìm kiếm*/
+header .search{
+    display:inline-block;
+    color:white;
+}
+header .search-bar{
+    float: right;
+    display:block;
+    margin-top:100px ;
+    margin-right: 10px;
+    height: 50px;
+}
+header input[type=text] {
+    width: 10vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    transition: width 0.4s ease-in-out;
+}
+header nav li:hover{
+    background-color:white;
+}
+header .search:hover{
+    background-color:white;
+    color:black;
+}
+header .search:hover .search-bar{
+    display:block;
+}
+header form input[type="text"]:focus{
+    width:20vw;
+    background-color:white;
+}
+
+header .acc{
+    float: right;
+    height: auto;
+}
+header .acc i  {
+    float: right;
+    color: #5c5c5c;
+    font-size: 20px;
+    margin: 100px 10px 100px 0;
+}
+/*đây là code của phần footer*/
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+}
+/* phần này là  liên kết facebook*/
+
+footer .box_footer i{
+    font-size: 30px;
+    float: left;
+    margin-right: 30px;
+    color: white;
+    margin-top: 30px;
+}
+footer .box_footer i:hover {
+    color:  hotpink;
+}
+footer .box_main a{
+    color: white;
+    float: left;
+    margin-right: 10px;
+    font-size: 18px;
+}
+footer .box_dk{
+    margin: 80px 0 70px 0;
+    text-align: center;
+}
+/*thanh email*/
+footer #box_email{
+    background: black;
+    border-bottom: 2px solid white;
+}
+footer #box_email input{
+    background: black;
+    width: 23vw;
+    outline: 0;
+    border: 0;
+}
+footer #box_email button{
+    color: white;
+    background: hotpink;
+    text-align: center;
+    outline: 0;
+    margin-bottom: 10px;
+}
+footer #box_email button:hover{
+    background: white;
+    color: hotpink;
+}
+footer #note_feedback{
+    margin-top: 20px;
+}
+/*phần này lầ chỗ liên kết */
+footer .Footer__PaymentList{
+    margin-top: 80px;
+}
+footer .HorizontalList__Item{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+footer .box_dk a{
+    list-style: none;
+    text-decoration: none;
+    outline: 0;
+    color: hotpink;
+}
+
+/*reposive menu */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+
+    color: gray;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px ) {
+    .header_span h4{
+        font-size: 3vw;
+    }
+    header{
+        min-height: 100px;
+    }
+    .header_main{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .acc{
+        margin-top: -70px;
+        font-size:5vw ;
+    }
+    .footer_header h3{
+        font-size: 4vw;
+    }
+    .footer_header i{
+        font-size: 4vw;
+    }
+    .footer_main a{
+        font-size: 3vw;
+    }
+    #box_email {
+        font-size: 2vw;
+    }
+    #box_email input{
+        font-size: 2vw;
+        max-width: 16vw;
+    }
+    #box_email button{
+        font-size: 2vw;
+        width: 10vw;
+        height: 5vw;
+    }
+    .acc i{
+        font-size: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*Body*/
+.about {
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+
+.about h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about .border{
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: hotpink;
+    margin: 30px auto;
+}
+
+.avatar{
+    margin: 20px 20px;
+}
+
+.avatar a{
+    display: inline-block;
+    margin: 20px 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.avatar a:hover > img{
+    filter: none;
+}
+
+.person{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.person:target{
+    height: auto;
+}
+
+.avatar img .person:target {
+    filter: none;
+}
+
+
+.name{
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+p{
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.social-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    padding: 10px 10px;
+
+}
+
+.social-button a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    background: hotpink;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.social-button a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, blue, hotpink);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social-button a:hover::before{
+    transform: scale(0);
+}
+
+.social-button a i{
+    transition: 0.3s ease-in;
+}
+
+.social-button a:hover i{
+    background: linear-gradient(45deg, pink,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
