@@ -1,0 +1,272 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+    background-color: white;
+    font-size: 20px;
+}
+.lh{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#infor{
+    margin-top: 50px;
+}
+#checks{/* box của phần thông tin cá nhân*/
+   background-color:white;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 600px;
+}
+#send {
+    /* phần này là nút gửi thông tin khách hàng*/
+    margin-bottom: 90px;
+    margin-left: 530px;
+}
+#footer{
+    margin-top: 30px;
+    text-align: center;
+    height: 100px;
+}
+.item1{
+    margin-top: 10px;
+}
+.item1 input{
+    width: 500px;
+}
+.item1 button{
+    background:red;
+    color: white;
+    border: 2px solid white;
+}
+.item1 button:hover{
+    background: white;
+    color: red;
+}
+.item2{
+    margin-top: 30px;
+}
+#forgot_password{
+    height: 400px;
+}
+.item3{
+    text-decoration: none;
+    list-style: none;
+    color:grey;
+    font-size: 15px;
+}
+.item3:hover{
+    color: black;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.yesgs{
+    background: red;
+    color: white;
+}
+/*phần này là của article*/
+article{
+    margin:140px 0 100px 0;
+}
+
+
+/*phần này là phần của header và footer*/
+header{
+    height: auto;
+    background: white;
+    max-height: 140px;
+    opacity: 0.9;
+    border-bottom: 1px solid black;
+}
+.header_main{
+    height: auto;
+    float: left;
+    margin-top: 25px;
+}
+.header_main a{
+    color: black;
+}
+/*reposive menu */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: white;
+    font-size: 16px;
+}
+.topnav a:hover {
+    color: gray;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 2px solid gray;
+}
+.topnav a.active {
+    color: gray;
+}
+.topnav a.active:hover {
+    color: gray;
+}
+.topnav .icon {
+    display: none;
+}
+.topnav .icon i{
+    font-size: 20px;
+    color: gray;
+}
+
+@media screen and (max-width: 960px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+/*chỗ này là của thanh tìm kiếm*/
+.search{
+    display:inline-block;
+    color:white;
+}
+.search-bar{
+    float: right;
+    display:block;
+    margin-right: 10px;
+    height: 50px;
+    margin-top: 35px;
+}
+.search-bar input {
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    transition: width 0.7s ease-in-out;
+    float: right;
+}
+nav li:hover{
+    background-color:white;
+}
+.search:hover{
+    background-color:white;
+    color:black;
+}
+.search:hover .search-bar{
+    display:block;
+}
+.search-bar form input:focus{
+    width:200%;
+    background-color:white;
+}
+
+.acc{
+    float: right;
+    height: auto;
+    margin-top:35px;
+}
+header .acc i {
+    float: right;
+    color: #5c5c5c;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+
+}
+/*đây là code của phần footer*/
+
+/*phần này là reposive của phần footer*/
+
+@media screen and (max-width: 960px) {
+    footer .footer_header{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer .footer_header{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    footer .footer_header{
+        max-width: 100%;
+
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+}
+/* phần này là  liên kết facebook*/
+
+footer .box_footer i{
+    font-size: 30px;
+    float: left;
+    margin-right: 30px;
+    color: white;
+    margin-top: 30px;
+}
+
+footer .box_main a{
+    color: white;
+    float: left;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.box_dk{
+    margin: 80px 0 70px 0;
+    text-align: center;
+}
+/*thanh email*/
+#box_email{
+    background: black;
+    border-top: 1px solid black;
+    border-right: 1px solid black ;
+    border-left:  1px solid black;
+    border-bottom: 0.01px solid black;
+    width: 100%;
+    outline: 0;
+    text-align: start;
+    padding: 10px 45px 10px 0 ;
+    max-width: 400px;
+}
+.send_emailgs{
+    font-size: 25px;
+    color: white;
+}
+#note_feedback{
+    margin-top: 20px;
+}
+/*phần này lầ chỗ liên kết-footer */
+.Footer__PaymentList{
+    margin-top: 80px;
+}
+.HorizontalList__Item{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
